@@ -112,7 +112,7 @@ CSV input -> schema validation -> row-level checks -> versioned reference/effect
 ## Testing and correctness evidence
 
 ```bash
-pytest -q
+pytest -q — 11 tests passing, including invalid reference-schema handling.
 ```
 
 Tests cover a happy path, empty input, missing required values, duplicate event IDs, malformed extra fields, unexpected schema change, reference-version refresh, idempotent rerun, effective-date boundary behavior, unknown codes, deprecated codes, and missing input files. Reconciliation verifies `input_rows = accepted_rows + rejected_rows` and confirms persisted table counts agree with run metrics.
