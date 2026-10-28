@@ -21,7 +21,7 @@ AI assistance was used in the following areas:
 
 ## Verification
 
-The candidate ran the project locally, inspected execution reports, ran automated tests, and checked reconciliation results. The implementation and its limitations should be reviewed and understood before submission.
+The project was run locally, the execution reports were inspected, all 11 automated tests passed, and reconciliation was verified for a 100,000-row synthetic dataset. The prompt record is a best-effort account of the available conversation history and should not be treated as a complete verbatim transcript.
 
 ## Prompt Records
 
