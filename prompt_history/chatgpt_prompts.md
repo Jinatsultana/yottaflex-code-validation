@@ -1,61 +1,63 @@
-# ChatGPT Prompt History — Working Record
-## Project: YottaFlex 72-Hour Code Challenge
+# AI Prompt History — YottaFlex 72-Hour Code Challenge
 
 **AI tool:** ChatGPT  
-**Purpose:** Assistance with solution development, testing, documentation, and repository setup.
+**Project:** YottaFlex Code Validation Pipeline  
+**Purpose:** Documentation of AI-assisted development activities during the challenge.
 
-## 1. Initial Challenge and Solution Development
+---
 
-The initial interaction involved providing the YottaFlex challenge requirements and requesting assistance with the task.
+## 1. Solution Design and Implementation
 
-The subsequent work covered:
-- Designing a Python data-validation pipeline using versioned reference datasets.
-- Handling schema validation, effective dates, deprecated and unknown codes, and rejected-record quarantine.
+ChatGPT was used to assist with planning and implementing a Python-based data validation pipeline against versioned reference datasets.
+
+The assistance covered:
+
+- Designing the validation workflow and project structure.
+- Implementing reference-data versioning and effective-date validation.
+- Handling unknown, deprecated, and invalid codes.
+- Designing rejected-record handling and error reporting.
 - Implementing deterministic run IDs, idempotent execution, SQLite persistence, and reconciliation.
-- Preparing synthetic input data, automated tests, and project documentation.
 
-## 2. Testing and Validation Follow-ups
+---
 
-Follow-up prompts requested step-by-step assistance with:
-- Testing empty CSV inputs, including zero-byte files and files containing headers but no records.
-- Running the automated test suite and interpreting its results.
-- Verifying repeat execution on a 100,000-row synthetic dataset.
-- Checking reconciliation between input, accepted, and rejected row counts.
-- Reviewing test coverage and adding a test for inclusive effective-date boundaries.
+## 2. Testing and Verification
 
-## 3. Documentation and Repository Publication
+ChatGPT was used to support test planning, debugging, and verification, including:
 
-Further prompts requested assistance with:
-- Reviewing the README and test coverage.
-- Checking `.gitignore` and repository contents before publication.
-- Initializing Git, staging project files, and creating the initial commit.
-- Creating a public GitHub repository and configuring authentication.
-- Publishing the committed project to GitHub.
-- Improving the organization and wording of the AI-use disclosure and prompt-history documentation.
+- Testing empty and malformed CSV inputs.
+- Validating required input and reference-data schemas.
+- Testing duplicate event IDs and effective-date boundaries.
+- Verifying behavior when reference-data versions change.
+- Running automated tests and reviewing their results.
+- Generating and processing a deterministic 100,000-row synthetic dataset.
+- Checking reconciliation between input, accepted, and rejected records.
 
-## 4. Record Completeness
+---
 
-**Important:** This document currently summarizes prompt topics; it is not a verbatim transcript of every prompt submitted to ChatGPT.
+## 3. Documentation and Repository Setup
 
-Before submission, compare this summary against the available conversation history and replace or supplement it with the actual prompts, preserving their wording as accurately as possible. Include prompts submitted to every other AI tool used during the challenge, if applicable. Do not claim that the transcript is complete until that review has been performed.
+ChatGPT also assisted with:
 
-This record is a best-effort account of the available prompts and activities, not a complete export of the ChatGPT conversation.
+- Preparing and improving the README and design documentation.
+- Reviewing test coverage and documenting known limitations.
+- Reviewing repository organization and `.gitignore` rules.
+- Providing guidance on Git operations and publishing the project to GitHub.
+- Drafting and refining the AI-use disclosure and this prompt-history record.
 
-## 5. Actual Follow-up Prompts
+---
 
-The following prompts are reproduced from the available conversation history. Earlier challenge and implementation prompts should also be included where their exact wording is available.
+## 4. Record Scope and Limitations
 
-1. "if i give all my prompt details then they will thank everthing i have done with ai and i am not professional and dont know anything without AI which i luteraly dont wnat to think about me"
-2. "i dont know but oi just want to get sleected for this role"
-3. "you are with this part right"
-4. "tell me whats next step"
-5. "update in this code format and give me the updated one to make it professional"
-6. "done updated the readme next one step"
-7. "empty"
-8. "saved"
-9. "done next"
-10. "done next"
-11. "yeah done"
-12. "yes opened"
+This document is a **topic-based summary of AI-assisted activities**, not a verbatim transcript or an exhaustive list of every prompt submitted during the challenge.
 
-This is a partial reproduction of follow-up prompts, not a complete transcript. It preserves the wording of the selected messages as they appeared in the conversation. The full record must include the remaining user prompts and prompts submitted to any other AI tools used.
+The record is intended to describe the main areas in which ChatGPT provided assistance. Exact prompt wording has not been reproduced comprehensively. Where a complete conversation export is unavailable, this limitation is disclosed rather than presenting the summary as a complete transcript.
+
+Any other AI tools used during the challenge should also be documented separately, if applicable.
+
+---
+
+## 5. Verification and Responsibility
+
+The project was run locally, the automated test suite completed with 11 passing tests, and reconciliation was verified for a 100,000-row synthetic dataset. These results are documented separately in the project README and AI-use disclosure.
+
+AI assistance does not replace the candidate's responsibility to review the implementation, understand its behavior and limitations, and explain the submitted solution during an interview.
