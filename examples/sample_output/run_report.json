@@ -1,0 +1,21 @@
+{
+  "run_id": "3b83d88060001d44",
+  "source_file": "incoming_codes.csv",
+  "reference_version": "v1",
+  "started_at": "2026-10-27T18:44:54Z",
+  "ended_at": "2026-10-27T18:44:54Z",
+  "status": "success",
+  "input_rows": 11,
+  "accepted_rows": 3,
+  "rejected_rows": 8,
+  "duration_ms": 12.516,
+  "failure_reason": null,
+  "rejects_by_reason": {
+    "unknown_code": 1,
+    "outside_effective_dates": 3,
+    "deprecated_code": 1,
+    "invalid_event_date": 1,
+    "duplicate_event_id": 1,
+    "missing_required_field": 1
+  }
+}

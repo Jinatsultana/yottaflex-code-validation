@@ -1,0 +1,4 @@
+run_id,event_id,entity_id,code,event_date,reference_version,reference_description,source_file,source_line
+3b83d88060001d44,EVT-001,ENT-01,A100,2026-10-01,v1,Active standard code,incoming_codes.csv,2
+3b83d88060001d44,EVT-002,ENT-02,B200,2026-12-31,v1,Seasonal code,incoming_codes.csv,3
+3b83d88060001d44,EVT-009,ENT-09,A100,2026-10-02,v1,Active standard code,incoming_codes.csv,10

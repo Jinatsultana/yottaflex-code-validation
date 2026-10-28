@@ -1,0 +1,10 @@
+{
+  "input_rows": 100000,
+  "accepted_rows": 58203,
+  "rejected_rows": 41797,
+  "duration_ms": 868.789,
+  "approx_rows_per_second": 115102,
+  "reference_version": "v1",
+  "seed": 42,
+  "note": "Measured in this execution environment; timings vary by machine and should be rerun by the candidate before submission."
+}

@@ -1,0 +1,11 @@
+reference_version,code,description,valid_from,valid_to,deprecated
+v1,A100,Active standard code,2025-01-01,,false
+v1,B200,Seasonal code,2025-01-01,2026-12-31,false
+v1,C300,Future code,2027-01-01,,false
+v1,D400,Deprecated legacy code,2020-01-01,,true
+v1,E500,Retired code,2020-01-01,2024-12-31,false
+v2,A100,Active standard code revised,2025-01-01,,false
+v2,B200,Seasonal code revised,2025-01-01,2027-06-30,false
+v2,C300,Future code,2027-01-01,,false
+v2,D400,Deprecated legacy code,2020-01-01,,true
+v2,F600,New code in v2,2026-01-01,,false

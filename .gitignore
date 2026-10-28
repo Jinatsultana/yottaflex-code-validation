@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+outputs/*.db
+outputs/*.db-*
+outputs/accepted_records.csv
+outputs/rejected_records.csv
+outputs/run_report.json
+data/input/generated_codes.csv
+.env
+.env.*
+!.env.example
+.vscode/
