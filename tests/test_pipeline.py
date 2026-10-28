@@ -82,4 +82,23 @@ def test_effective_date_boundaries_are_inclusive(tmp_path):
     assert metrics["status"] == "success"
     assert metrics["accepted_rows"] == 2
     assert metrics["rejected_rows"] == 0
+def test_invalid_reference_schema_fails_loudly(tmp_path):
+    bad_ref = tmp_path / "bad_reference.csv"
+    write_csv(bad_ref, ["code", "description"], [["A100", "Example"]])
 
+    source = tmp_path / "incoming.csv"
+    write_csv(
+        source,
+        ["event_id", "entity_id", "code", "event_date"],
+        [["1", "E1", "A100", "2026-10-01"]],
+    )
+
+    metrics = run_pipeline(
+        source, bad_ref, tmp_path / "db.sqlite", tmp_path / "out", "v1"
+    )
+
+    assert metrics["status"] == "failed"
+    assert metrics["rejected_rows"] == 1
+    assert "pipeline_failure" in (
+        tmp_path / "out" / "rejected_records.csv"
+    ).read_text()
