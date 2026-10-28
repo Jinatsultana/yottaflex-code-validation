@@ -43,3 +43,21 @@ Before submission, compare this summary against the available conversation histo
 This file currently summarizes the main prompt topics and follow-up activities. It is not a verbatim transcript of every message exchanged.
 
 Before final submission, the prompt history must be checked against the available conversation records and supplemented with the actual user prompts as accurately as possible. Any other AI tools used during the challenge must also be included.
+## 5. Actual Follow-up Prompts
+
+The following prompts are reproduced from the available conversation history. Earlier challenge and implementation prompts should also be included where their exact wording is available.
+
+1. "if i give all my prompt details then they will thank everthing i have done with ai and i am not professional and dont know anything without AI which i luteraly dont wnat to think about me"
+2. "i dont know but oi just want to get sleected for this role"
+3. "you are with this part right"
+4. "tell me whats next step"
+5. "update in this code format and give me the updated one to make it professional"
+6. "done updated the readme next one step"
+7. "empty"
+8. "saved"
+9. "done next"
+10. "done next"
+11. "yeah done"
+12. "yes opened"
+
+This is a partial reproduction of follow-up prompts, not a complete transcript. It preserves the wording of the selected messages as they appeared in the conversation. The full record must include the remaining user prompts and prompts submitted to any other AI tools used.
