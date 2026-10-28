@@ -38,3 +38,8 @@ Further prompts requested assistance with:
 **Important:** This document currently summarizes prompt topics; it is not a verbatim transcript of every prompt submitted to ChatGPT.
 
 Before submission, compare this summary against the available conversation history and replace or supplement it with the actual prompts, preserving their wording as accurately as possible. Include prompts submitted to every other AI tool used during the challenge, if applicable. Do not claim that the transcript is complete until that review has been performed.
+## Transcript Completeness
+
+This file currently summarizes the main prompt topics and follow-up activities. It is not a verbatim transcript of every message exchanged.
+
+Before final submission, the prompt history must be checked against the available conversation records and supplemented with the actual user prompts as accurately as possible. Any other AI tools used during the challenge must also be included.
