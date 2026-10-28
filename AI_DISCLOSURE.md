@@ -7,3 +7,18 @@ Before submission:
 - Review the code and test logic personally.
 - Re-run the test suite and sample pipeline, then record the actual output.
 - Do not claim manual validation that has not been performed.
+## AI Assistance, Personal Verification, and Limitations
+
+### Areas of AI Assistance
+
+ChatGPT provided substantial assistance with solution design, implementation, test planning, debugging guidance, documentation, and repository setup. This included guidance on the validation pipeline, versioned reference data, effective-date rules, rejection handling, idempotency, SQLite persistence, and reconciliation.
+
+### Personal Verification
+
+I ran the project locally and reviewed its execution reports. I ran the automated test suite, which completed with 10 passing tests. I also executed the pipeline against a deterministic synthetic dataset of 100,000 rows and verified that the reported input, accepted, and rejected counts reconciled.
+
+### Understanding and Limitations
+
+I am continuing to strengthen my understanding of the implementation, including its design decisions, error handling, and operational limitations. I will review the core code paths and prepare to explain how the pipeline works, why the design was chosen, and what I would improve next.
+
+The prompt history is maintained separately under `prompt_history/`. It should be checked for completeness against the available conversation records before submission.
