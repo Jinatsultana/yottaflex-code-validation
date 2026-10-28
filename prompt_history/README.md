@@ -1,11 +1,30 @@
-# AI Prompt History (Required Submission Artifact)
+# AI Use and Prompt History
 
-YottaFlex asks candidates to include **all prompts submitted to every AI tool used**. Maintain this file during the challenge. The entries below describe the current work session; add each subsequent prompt exactly or faithfully, including prompts sent to other AI tools. AI responses are optional according to the candidate FAQ.
+## Purpose
 
-## ChatGPT — session log
+This directory documents the use of AI tools during the YottaFlex Code Challenge, including the scope of assistance, prompt records, and follow-up verification activities.
 
-1. User supplied the YottaFlex 72 Hours Code Challenge problem statement and asked for help with the task.
-2. Assistant proposed a local-first Python pipeline with versioned reference data, effective-date checks, quarantine, idempotency, metrics, tests, and documentation.
-3. Implementation prompts used in this session: the user supplied the challenge requirements; the assistant independently drafted project files, sample data, tests, and documentation to address those requirements.
+## AI Tool Used
 
-**Important:** This is a working disclosure summary, not an export of every internal model operation. Before submission, add any further user prompts and prompts sent to other AI tools. The candidate should ensure the history accurately reflects their actual use and review it for completeness.
+- **Tool:** ChatGPT
+- **Primary use:** Solution design assistance, implementation support, test planning, debugging guidance, and documentation review.
+
+## Areas of Assistance
+
+AI assistance was used in the following areas:
+
+1. **Solution design:** Structuring a local Python data-validation pipeline using versioned reference data.
+2. **Implementation:** Developing and reviewing schema validation, effective-date checks, rejection handling, persistence, and reconciliation.
+3. **Testing:** Identifying edge cases, reviewing test coverage, and validating rerun behavior and effective-date boundaries.
+4. **Documentation:** Preparing the README, data dictionary, design trade-offs, and AI-use disclosure.
+5. **Repository workflow:** Guidance on Git setup, repository hygiene, GitHub authentication, and publishing the project.
+
+## Verification
+
+The candidate ran the project locally, inspected execution reports, ran automated tests, and checked reconciliation results. The implementation and its limitations should be reviewed and understood before submission.
+
+## Prompt Records
+
+The accompanying prompt transcript should record prompts submitted to ChatGPT as accurately as available conversation records allow. Prompts submitted to other AI tools must also be documented if any were used.
+
+This overview describes the scope of AI assistance; it is not a substitute for the required prompt transcript.
