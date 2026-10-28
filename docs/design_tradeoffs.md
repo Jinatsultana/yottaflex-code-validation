@@ -17,10 +17,14 @@
 - Additive unknown input columns are tolerated, but required-column removal fails. A stricter contract could reject all unknown columns if the source requires exact schemas.
 - Failure artifact is batch-level when a file cannot be parsed or its schema is broken; row-level rejects are produced when rows can be read.
 
-## Validation evidence to collect before submission
+## Validation Evidence
 
-- `pytest -q` output
-- sample `run_report.json`
-- reconciliation command output
-- a 100,000-row run duration and approximate throughput
-- manual inspection of representative accepted and rejected records
+The following verification was completed locally:
+
+- **Automated tests:** `pytest -q` — 11 tests passed.
+- **Sample outputs:** committed accepted and rejected CSV files and a run report under `examples/sample_output/`.
+- **Reconciliation:** the 100,000-row run reconciled successfully, with 58,203 accepted rows and 41,797 rejected rows.
+- **Performance:** the 100,000-row run completed in approximately 0.93 seconds in the recorded local environment.
+- **Record inspection:** the sample outputs include accepted records and rejected records with reason codes for review.
+
+> **Note:** Performance measurements are environment-dependent and should be treated as an observed local result, not a general throughput guarantee.
