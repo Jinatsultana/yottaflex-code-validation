@@ -2,29 +2,31 @@
 
 ## Purpose
 
-This directory documents the use of AI tools during the YottaFlex Code Challenge, including the scope of assistance, prompt records, and follow-up verification activities.
+This directory documents AI-tool usage during the YottaFlex Code Challenge, including the areas of assistance, available prompt records, and verification activities.
 
-## AI Tool Used
+## AI Tools Used
 
-- **Tool:** ChatGPT
-- **Primary use:** Solution design assistance, implementation support, test planning, debugging guidance, and documentation review.
+- **ChatGPT:** Solution design, implementation support, test planning, debugging guidance, technical explanations, documentation, and repository preparation.
+- **Claude:** Research during the challenge.
 
-## Areas of Assistance
-
-AI assistance was used in the following areas:
+## Areas of ChatGPT Assistance
 
 1. **Solution design:** Structuring a local Python data-validation pipeline using versioned reference data.
-2. **Implementation:** Developing and reviewing schema validation, effective-date checks, rejection handling, persistence, and reconciliation.
+2. **Implementation:** Guidance on schema validation, effective-date checks, rejection handling, persistence, and reconciliation.
 3. **Testing:** Identifying edge cases, reviewing test coverage, and validating rerun behavior and effective-date boundaries.
 4. **Documentation:** Preparing the README, data dictionary, design trade-offs, and AI-use disclosure.
-5. **Repository workflow:** Guidance on Git setup, repository hygiene, GitHub authentication, and publishing the project.
+5. **Repository workflow:** Guidance on project setup, repository hygiene, Git operations, and publishing the project.
 
 ## Verification
 
-The project was run locally, the execution reports were inspected, all 11 automated tests passed, and reconciliation was verified for a 100,000-row synthetic dataset. The prompt record is a best-effort account of the available conversation history and should not be treated as a complete verbatim transcript.
+The project was run locally, execution reports were inspected, all 11 automated tests passed in the latest recorded run, and reconciliation was verified for a 100,000-row synthetic dataset.
 
-## Prompt Records
+These results describe the checks performed; they do not establish that every possible failure scenario has been tested.
 
-The accompanying prompt transcript should record prompts submitted to ChatGPT as accurately as available conversation records allow. Prompts submitted to other AI tools must also be documented if any were used.
+## Prompt Records and Limitations
 
-This overview describes the scope of AI assistance; it is not a substitute for the required prompt transcript.
+The file `ai_prompt_history.md` provides a best-effort, topic-based record of AI assistance. It is not a complete verbatim transcript.
+
+The original Claude conversation history was deleted before this record was prepared. Its exact prompts could not be recovered for inclusion. This limitation is disclosed rather than filling the gap with invented prompts.
+
+The directory documents the available information about both AI tools and distinguishes topic summaries from original prompt records.
