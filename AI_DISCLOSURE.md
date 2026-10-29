@@ -1,19 +1,32 @@
 # AI Use Disclosure
 
-AI assistance was used to help structure the solution, draft implementation code, propose edge-case tests, and prepare documentation. The candidate remains responsible for understanding and validating every submitted line, running the project in a clean environment, and ensuring this disclosure accurately reflects actual AI use.
+## 1. AI Tools Used
 
+Two AI tools were used during this challenge:
 
-## AI Assistance, Personal Verification, and Limitations
+- **ChatGPT:** Used extensively for solution design, implementation guidance, debugging, test planning, technical explanations, documentation, and repository preparation.
+- **Claude:** Used for research during the challenge.
 
-### Areas of AI Assistance
+AI tools served as supporting resources. The candidate remains responsible for the submitted implementation, its correctness, and the ability to explain its design and behavior.
 
-ChatGPT provided substantial assistance with solution design, implementation, test planning, debugging guidance, documentation, and repository setup. This included guidance on the validation pipeline, versioned reference data, effective-date rules, rejection handling, idempotency, SQLite persistence, and reconciliation.
+## 2. Personal Verification
 
-### Personal Verification
+The project was executed and tested locally.
 
-I ran the project locally and reviewed its execution reports. The automated test suite completed with 11 passing tests, including invalid reference-schema handling. I also ran the pipeline against a deterministic synthetic dataset of 100,000 rows. The run completed successfully in approximately 0.93 seconds, with 58,203 accepted rows and 41,797 rejected rows. I ran reconciliation and confirmed that the accepted and rejected counts sum to the input count and that the persisted record counts match the run metrics.
-### Understanding and Limitations
+The latest recorded automated test run completed with 11 passing tests. A deterministic synthetic dataset of 100,000 rows was also processed, producing 58,203 accepted rows and 41,797 rejected rows. Reconciliation confirmed that the accepted and rejected counts sum to the input count.
 
-I am continuing to strengthen my understanding of the implementation, including its design decisions, error handling, and operational limitations. I will review the core code paths and prepare to explain how the pipeline works, why the design was chosen, and what I would improve next.
+The committed performance report records a runtime of approximately 0.87 seconds for that execution. Performance depends on the execution environment and should not be interpreted as a universal benchmark.
 
-The prompt history is maintained separately under `prompt_history/`. It should be checked for completeness against the available conversation records before submission.
+## 3. Understanding and Limitations
+
+AI assistance contributed substantially to the development workflow. The candidate is responsible for understanding the implementation, reviewing its behavior, and explaining the design decisions, dependencies, assumptions, and limitations.
+
+The automated tests provide evidence of expected behavior but do not establish that every possible failure scenario has been tested.
+
+## 4. Prompt History and Transparency
+
+The `prompt_history/` directory contains a best-effort, topic-based record of AI assistance.
+
+The original Claude conversation history was deleted before this disclosure was prepared. As a result, the exact Claude prompts and responses could not be recovered for inclusion. The record discloses Claude's research use without inventing or presenting reconstructed prompts as verbatim messages.
+
+The available prompt record is therefore not a complete verbatim transcript of every interaction with every AI tool. This limitation is stated explicitly to maintain transparency about the available records.
