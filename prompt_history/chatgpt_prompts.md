@@ -3,67 +3,59 @@
 ## YottaFlex 72-Hour Code Challenge
 
 **Project:** Versioned Code Validation Pipeline  
-**AI tool:** ChatGPT  
-**Purpose:** Document AI-assisted development activities, verification work, and the limitations of the available prompt record.
+**AI tools used:** ChatGPT and Claude  
+**Purpose:** Document AI-assisted development activities, research assistance, verification work, and limitations in the available prompt records.
 
 ---
 
 ## 1. Overview
 
-ChatGPT was used as a development assistant during the creation of a Python-based data validation pipeline. The work involved iterative questions, implementation guidance, debugging support, testing, documentation, and repository preparation.
+AI tools were used as supporting resources during the development of a Python-based data validation pipeline.
 
-The interaction followed an incremental workflow: identify a task, work through the relevant implementation or documentation, execute commands locally, inspect results, and proceed to the next task.
+ChatGPT was used extensively for solution design, implementation guidance, debugging, test planning, technical explanations, documentation, and repository preparation. Claude was used for research related to the challenge.
 
-## 2. Prompt Topics and Development Activities
+The development process involved iterative problem-solving, local execution, inspection of outputs, testing, and documentation review. The candidate remains responsible for understanding and validating the submitted implementation.
 
-The following sections summarize the main categories of assistance requested during development. They are **topic-based descriptions, not reconstructed verbatim prompts**.
+## 2. ChatGPT Assistance
+
+The following topics summarize the main areas of assistance requested during development. These descriptions are topic-based summaries, not reconstructed verbatim prompts.
 
 ### 2.1 Solution Design and Implementation
-
-Assistance was requested for:
 
 - Planning the structure of a locally runnable Python validation pipeline.
 - Implementing validation against versioned reference datasets.
 - Handling effective dates, unknown codes, deprecated codes, and malformed records.
 - Designing accepted-record and rejected-record processing.
 - Implementing deterministic run identifiers, SQLite persistence, idempotent reruns, and reconciliation.
-- Understanding implementation details and deciding on subsequent development steps.
+- Understanding implementation details and planning subsequent development steps.
 
 ### 2.2 Testing and Debugging
 
-Assistance was requested for:
-
 - Setting up the Python environment and test dependencies.
 - Running the automated test suite and interpreting results.
-- Investigating empty inputs, missing required fields, malformed records, duplicates, and schema errors.
+- Investigating missing fields, malformed records, duplicate identifiers, and schema errors.
 - Testing effective-date boundaries and reference-version changes.
 - Verifying repeat execution and reconciliation.
 - Generating and processing a reproducible 100,000-row synthetic dataset.
 
-### 2.3 Documentation and Technical Explanation
+### 2.3 Documentation and Repository Preparation
 
-Assistance was requested for:
+- Preparing the README, data dictionary, design notes, and AI-use disclosure.
+- Documenting assumptions, design decisions, trade-offs, and limitations.
+- Reviewing repository structure, `.gitignore`, packaging, and test settings.
+- Preparing and checking the public GitHub repository.
 
-- Preparing and improving the README and data dictionary.
-- Documenting architecture, assumptions, design decisions, trade-offs, and limitations.
-- Reviewing test coverage and describing validation evidence.
-- Preparing the AI-use disclosure and this development record.
-- Checking whether the documentation accurately represented the implementation and verification results.
+## 3. Claude Research Assistance
 
-### 2.4 Repository Preparation
+Claude was also used for research during the challenge.
 
-Assistance was requested for:
+The original Claude conversation history was deleted before this record was prepared. Consequently, the exact prompts and responses could not be verified from that conversation history when this document was updated.
 
-- Reviewing repository structure and `.gitignore`.
-- Configuring project packaging and test settings.
-- Understanding Git operations and resolving repository synchronization issues.
-- Preparing the public GitHub repository and checking that the required files were published.
+This section records the use of Claude at the level currently supported by the candidate's recollection. It does not claim to reproduce the original prompts verbatim or provide a complete transcript. No specific research prompt has been reconstructed and presented as an original message.
 
----
+## 4. Local Verification and Personal Responsibility
 
-## 3. Local Verification and Personal Responsibility
-
-The following activities were performed locally during development:
+The following verification activities were performed locally during development:
 
 - The automated test suite completed with 11 passing tests in the latest recorded run.
 - A deterministic synthetic dataset of 100,000 rows was processed.
@@ -73,24 +65,20 @@ The following activities were performed locally during development:
 
 These results document the checks performed; they do not imply that every possible failure scenario has been tested.
 
-I remain responsible for reviewing the submitted implementation, understanding its behavior and limitations, and explaining the design decisions during an interview.
+I remain responsible for understanding the submitted implementation, validating its behavior, and explaining the design decisions and limitations during an interview.
 
----
+## 5. Prompt Record Scope and Limitations
 
-## 4. Prompt Record Scope and Limitations
+This document is a best-effort record of AI-tool usage, not a complete verbatim transcript of every prompt submitted to every tool.
 
-This file is a **best-effort, topic-based development record**, not a complete verbatim transcript of every prompt submitted to ChatGPT.
+The ChatGPT section summarizes the main development topics. The Claude section records research-tool usage based on the information currently available. The original Claude conversation history was deleted, so its exact prompts could not be recovered for this record.
 
-The record summarizes the main areas of AI assistance during the challenge. Exact prompt wording has not been reproduced comprehensively, and a complete export of the conversation is not included here.
+Missing prompts have not been invented or represented as verbatim messages. This limitation is disclosed to distinguish the available development record from a complete prompt archive.
 
-Where exact prompt wording is available, it should be preserved accurately. Missing prompts are not reconstructed or presented as verbatim messages. This limitation is disclosed to distinguish the available summary from a complete prompt transcript.
+## 6. Transparency Statement
 
-If other AI tools were used during the challenge, their prompts should also be documented in accordance with the challenge requirements.
+AI assistance contributed to the development workflow. ChatGPT supported implementation, testing guidance, debugging, and documentation, while Claude was used for research.
 
----
+Local execution and test results provided evidence of the implementation's behavior. The candidate remains responsible for reviewing the code, understanding its dependencies and limitations, and explaining the submitted work accurately.
 
-## 5. Transparency Statement
-
-AI assistance contributed substantially to solution development, testing guidance, debugging, and documentation. Local execution and test results provided evidence of the implementation's behavior, while continued review is necessary to ensure that the design, code paths, and limitations can be explained accurately.
-
-This record is intended to provide an honest account of the main areas of AI assistance without claiming a level of transcript completeness that has not been verified.
+This record aims to disclose AI use honestly and distinguish verified information from details that are no longer available.
